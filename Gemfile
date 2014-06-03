@@ -41,3 +41,29 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'bootstrap-sass'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'pg'
+gem 'simple_form'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19]
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+  gem 'rb-fchange', :require=>false
+  gem 'rb-fsevent', :require=>false
+  gem 'rb-inotify', :require=>false
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-rescue'
+end
+
